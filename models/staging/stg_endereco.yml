@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_endereco
+    description: Apresenta o endereço dos cadastros disponíveis da Adventure Works. Podem ser de clientes, lojistas e fornecedores. 
+    columns:
+      - name: pk_id_endereco
+        description: Apresenta a chave primária dos endereços (ADDRESSID).
+      - name: fk_id_estado
+        description: Chave estrangeira que detalha os dados da região, estado e país dos endereços da base de dados da Adventure Works (STATEPROVINCEID).
+      - name: endereco
+        description: Apresenta as informações sobre o endereço (ADDRESSLINE1).
+      - name: cidade
+        description: Coluna com o nome da cidade do respectivo endereço (CITY).
+      - name: cep
+        description: Apresenta o código postal do respectivo endereço (POSTALCODE).
+      - name: data_atualizacao_endereco
+        description: Coluna com a data da última atualização/modificação do respectivo endereço (MODIFIEDDATE).

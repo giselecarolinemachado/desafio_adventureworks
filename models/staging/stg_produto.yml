@@ -1,0 +1,48 @@
+version: 2
+
+models: 
+  - name: stg_produto
+    description: Tabela com as informacoes gerais sobre os produtos confeccionados e comercializados pela Adventure Works. 
+    columns:
+      - name: pk_id_produto
+        description: Chave primaria do produto (PRODUCTID). 
+      - name: pk_id_subcategoria_produto
+        description: Chave estrangeira da subcategoria. Relaciona o produto a sua subcategoria (PRODUCTSUBCATEGORYID).
+      - name: fk_id_modelo_produto
+        description: Chave estrangeira do modelo do produto. Relaciona o produto ao seu modelo (PRODUCTMODELID).
+      - name: nome_produto
+        description: Nome do produto (NAME).
+      - name: numero_produto
+        description: Número do produto (PRODUCTNUMBER).
+      - name: flag_make_produto
+        description: Indica se o produto e produzido internamente ou adquirido de fornecedores (MAKEFLAG).
+      - name: flag_produto_acabado
+        description: Indica se e um produto de venda (produto acabado) ou um componente ou produto intermediário (FINISHEDGOODSFLAG).
+      - name: cor_produto
+        description: Identifica a cor do produto (COLOR).
+      - name: estoque_seguranca 
+        description: Estoque minimo de seguranca necessario para a Adventure Works (SAFETYSTOCKLEVEL).
+      - name: ponto_recompra_produto
+        description: Indica o estoque que aciona um novo pedido de compra (REORDERPOINT)
+      - name: custo_padrao_produto
+        description: Indica o custo padrão do produto (STANDARDCOST).
+      - name: lista_preco
+        description: Preço de venda do produto (LISTPRICE).
+      - name: tamanho_produto 
+        description: Tamanho do produto (SIZE).
+      - name: cod_tamanho_medida_produto
+        description: Apresenta a unidade de medida do tamanho do produto (SIZEUNITMEASURECODE).
+      - name: peso_produto
+        description: Detalha o peso do produto (WEIGHT).
+      - name: cod_peso_produto
+        description: Apresenta a unidade de medida do peso do produto (WEIGHTUNITMEASURECODE).
+      - name: tempo_producao_dias
+        description: Informa o tempo para produzir o item em dias (DAYSTOMANUFACTURE).
+      - name: linha_produto
+        description: Nome da linha do produto (PRODUCTLINE).
+      - name: classe_produto
+        description: Nome da classe do produto (CLASS).
+      - name: estilo_produto
+        description: Nome do estilo do produto (STYLE).
+      - name: data_modificacao_produto
+        description: Apresenta a ultima data de modificação do produto (MODIFIEDDATE).

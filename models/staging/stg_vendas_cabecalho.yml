@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: stg_vendas_cabecalho
+    description: Tabela de cabeçalho de vendas com informações gerais sobre os pedidos da Adventure Works. 
+    columns:
+      - name: pk_id_pedido_venda
+        description: Chave primária dos respectivos pedidos da Adventure Works (SALESORDERID). 
+      - name: fk_id_cliente
+        description: Chave estrangeira que referente ao cliente da Adventure Works (CUSTOMERID).
+      - name: fk_id_vendedor
+        description: Chave estrangeira do vendedor responsavel pela respectiva venda (SALESPERSONID).
+      - name: fk_id_territorio
+        description: Chave estrangeira do territorio ou localizacao da venda (TERRITORYID).
+      - name: fk_id_endereco_fatura
+        description: Chave estrangeira do endereco da fatura do pedido da Adventure Works (BILLTOADDRESSID).
+      - name: fk_id_endereco_entrega
+        description: Chave estrangeira do endereco de entrega do pedido da Adventure Works (SHIPTOADDRESSID).
+      - name: fk_id_cartao_credito
+        description: Chave estrangeira do codigo da transacao por cartao de credito que associa cliente, pedido de venda e cartao de credito do cliente (CREDITCARDID).
+      - name: fk_id_taxa_moeda
+        description: Chave estrangeira que relaciona a cotacao da moeda ao pedido da venda (CURRENCYRATEID).
+      - name: numero_revisao_pedido
+        description: Numero de revisao do pedido de venda (REVISIONNUMBER).
+      - name: data_pedido
+        description: Data de emissao do pedido de venda (ORDERDATE).
+      - name: data_prazo_entrega
+        description: Data prazo de entrega do pedido (DUEDATE).
+      - name: data_despacho_mercadoria
+        description: Data em que o produto foi enviado (SHIPDATE).
+      - name: descricao_status
+        description: Situacao do pedido (STATUS).
+      - name: tipo_venda
+        description: Detalha se a venda foi feita online ou por lojista (ONLINEORDERFLAG).
+      - name: numero_ordem_compra
+        description: Numero do pedido de compra do fornecedor (PURCHASEORDERNUMBER).
+      - name: numero_conta
+        description: Numero da conta
+      - name: codigo_aprovacao_cartao_credito
+        description: Codigo da aprovacao da compra pelo cartao de credito (CREDITCARDAPPROVALCODE).
+      - name: valor_bruto_venda
+        description: Valor do pedido de venda sem frete e imposto inclusos (SUBTOTAL).
+      - name: valor_total_impostos
+        description: Valor dos impostos do pedido de venda (TAXAMT).
+      - name: valor_total_frete
+        description: Valor total do frete do pedido (FREIGHT).
+      - name: valor_total
+        description: Valor total do pedido, considerando produto, impostos e transporte (TOTALDUE).

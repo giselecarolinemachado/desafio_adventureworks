@@ -1,0 +1,46 @@
+version: 2
+
+sources: 
+  - name: data_adventure_works
+    description: Apresenta as fontes do ERP da Adventure Works. Os dados serão usados para o desafio da Indicium para certificação Analytics Engineer.
+    database: FEA24_11
+    schema: RAW_ADVENTURE_WORKS 
+    tables:
+      - name: PRODUCT
+        description: 'Apresenta as informações dos produtos comercializados pela Adventure Works.'
+      - name: PRODUCTCATEGORY
+        description: 'Classifica os produtos da Adventure Works em bikes, components, clothing e acessories.' 
+      - name: PRODUCTSUBCATEGORY
+        description: 'Classifica os produtos comercializados pela Adventure Works em uma subcategoria, de acordo com regras de negócio.'
+      - name: PERSON
+        description: 'Apresenta os dados das pessoas da Adventure Works (podem ser clientes, colaboradores e fornecedores).' 
+      - name: ADDRESS
+        description: 'Apresenta os endereços de clientes, colaboradores e fornecedores.'
+      - name: STATEPROVINCE
+        description: 'Apresenta os detalhes da região dos respectivos endereços disponíveis em address.' 
+      - name: COUNTRYREGION
+        description: 'Tabela composta por informações sobre as regiões e os respectivos países.'
+      - name: SALESORDERHEADER 
+        description: 'Apresenta as informações dos pedidos dos clientes.'
+      - name: SALESORDERDETAIL 
+        description: 'Detalha os pedidos de venda. Apresenta os valores, os descontos dos produtos dos produtos dos pedidos da Adventure Works.'
+      - name: SALESREASON
+        description: 'Apresenta os principais motivos/origens das vendas da Adventure Works.'
+      - name: SALESORDERHEADERSALESREASON
+        description: 'Relaciona os pedidos de venda e o motivo da mesma.'
+      - name: SALESPERSON
+        description: 'Apresenta as informações dos vendedores da Adventure Works, região de atuação e outras informações.'
+      - name: CUSTOMER
+        description: 'Tabela com as informações dos clientes da Adventure Works.'
+      - name: CREDITCARD 
+        description: 'Tabela com as informações do cartão de crédito dos clientes.'
+      - name: PERSONCREDITCARD
+        description: 'Tabela com informações de cartão de crédito na tabela CreditCard.'
+      - name: SHIPMETHOD
+        description: 'Apresenta as informações dos tipos de transporte disponíveis para os produtos da Adventure Works.'
+      - name: STORE
+        description: 'Tabela composta por revendedores/lojistas dos produtos da Adventure Works.'
+      
+
+
+      

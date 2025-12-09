@@ -1,0 +1,12 @@
+version: 2  
+
+models:
+  - name: stg_pais
+    description: Tabela composta pelo codigo e nome do pais, além da ultima data de atualizacao ou modificacao. 
+    columns:
+      - name: sigla_pais
+        description: Detalha a sigla dos paises (COUNTRYREGIONCODE).
+      - name: nome_pais
+        description: Apresenta o nome do pais (NAME).
+      - name: data_atualizacao_pais
+        description: Data da ultima atualizacao ou modificacao da tabela (MODIFIEDDATE).

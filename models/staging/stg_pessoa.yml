@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_pessoa
+    description: Apresenta os dados das pessoas que possuem alguma relação com a Adventure Works (colaboradores, clientes e fornecedores). 
+    columns:
+      - name: pk_id_identidade_pessoa
+        description: Chave primária que identifica a pessoa (BUSINESSENTITYID). 
+      - name: tipo_pessoa
+        description: Apresenta a classificação da pessoa (se é vendedor, lojista, supply ou contato geral) (PERSONTYPE).
+      - name: nome_pessoa
+        description: Apresenta o nome completo da pessoa (primeiro nome, nome do meio e último nome) (FIRSTNAME, MIDDLENAME, LASTNAME). 
+      - name: email_promocional 
+        description: Indica se a pessoa aceitou receber e-mails promocionais ou não (EMAILPROMOTION).
+      - name: tratamento_pessoa
+        description: Indica o tipo de tratamento da pessoa (SUFFIX)
+      - name: contato_adicional
+        description: Apresenta informações adicionais de contato (ADDITIONALCONTACTINFO)
+      - name: data_modificacao_pessoa
+        description: Apresenta a última data de atualização dos dados da pessoa (MODIFIEDDATE)

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_estado
+    description: Tabela contendo os estados, siglas e paises da base de dados da Adventure Works para enderecos de clientes, lojistas e fornecedores. 
+    columns:
+      - name: pk_id_estado
+        description: Chave primária que identifica cada estado/provincia (STATEPROVINCEID). 
+      - name: sigla_estado
+        description: Coluna composta pela sigla dos estados (STATEPROVINCECODE).
+      - name: sigla_pais
+        description: Coluna composta pela sigla dos paises (COUNTRYREGIONCODE).
+      - name: nome_pais
+        description: Columa composta pelo nome dos paises (NAME). 
+      - name: data_atualizacao_estado
+        description: Data da ultima atualizacao da tabela (MODIFIEDDATE).
