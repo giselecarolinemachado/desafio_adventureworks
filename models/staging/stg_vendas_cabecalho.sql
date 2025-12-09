@@ -32,7 +32,7 @@ with
             when ONLINEORDERFLAG = '2' then 'Venda Lojista'
         end as tipo_venda
         ,cast(PURCHASEORDERNUMBER as varchar) as numero_ordem_compra
-        ,cast(ACCOUNTNUMBERa as varchar) as numero_conta
+        ,cast(ACCOUNTNUMBER as varchar) as numero_conta
         ,cast(CREDITCARDAPPROVALCODE as varchar) as codigo_aprovacao_cartao_credito
         ,cast(SUBTOTAL as numeric(18,2)) as valor_bruto_venda
         ,cast(TAXAMT as numeric(18,2)) as valor_total_impostos
