@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_motivo_venda
+    description: Apresenta os dados brutos que relacionam os pedidos de venda e seus motivos/razões.
+    columns:
+      - name: pk_id_pedido_venda
+        description: Chave primária da tabela (SALESORDERID).
+      
+      - name:  fk_id_motivo_venda
+        description: chave estrangeira que relaciona o motivo da venda(SALESREASONID).
+      
+      - name: motivo_venda_data_modificacao
+        description: Última data de atualização das informações da tabela de motivos de venda (MODIFIEDDATE)

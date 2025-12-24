@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_lojas
+    description: Apresenta as informações sobre os cadastros das lojas/ clientes (revendedores) de produtos da Adventure Works.
+    columns:
+      - name: pk_id_loja
+        description: Chave primária da tabela (BUSINESSENTITYID).
+
+      - name: nome_loja
+        description: Nome da loja (NAME).

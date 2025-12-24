@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_despacho_produtos
+    description: Apresenta os dados brutos dos métodos de envio e transportadoras da Adventure Works. 
+    columns:
+      - name: pk_id_tipo_despacho
+        description: É a chave primária da tabela (SHIPMETHODID).
+
+      - name: nome_transportadora
+        description: Nome das transportadoras (NAME).
+
+      - name:  taxa_minima_metodo_despacho
+        description: Corresponde a taxa mínima para despacho de produtos (SHIPBASE).
+      
+      - name: custo_kg_metodo_despacho
+        description: Corresponde a taxa de envio cobrada por quilo de produto enviado (SHIPRATE).
+      
+      - name: metodo_envio_guid
+        description: Identifica o envio das mercadorias (ROWGUID).
+
+      - name: ultima_data_modificacao
+        description: Retorna a última data em que foram realizadas alterações na tabela SHIPMETHOD (MODIFIEDDATE)
+     
