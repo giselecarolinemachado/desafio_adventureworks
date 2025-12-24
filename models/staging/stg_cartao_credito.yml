@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_cartao_credito
+    description: Apresenta a tabela de preparação com as informações de cartão de crédito dos clientes.
+    columns:
+      - name: pk_id_cartao_credito
+        description: É a chave primária da tabela (CREDITCARDID).
+
+      - name: cartao_credito_tipo
+        description: Apresenta o nome (tipo) do cartão de crédito (CARDTYPE).
+
+      - name: numero_cartao_credito
+        description: Retorna o  (CARDNUMBER).
+
+      - name: cartao_credito_mes_expiracao
+        description: Retorna o mês que o cartão de crédito perde a validade (EXPMONTH).
+
+      - name: cartao_credito_ano_expiracao
+        description: Retorna o ano que o cartão de crédito perde a validade (EXPYEAR).
+
+      - name: cartao_credito_data_modificacao
+        description: Retorna a data que foi realizada a última modificação nas informações do cartão de crédito (MODIFIEDDATE).

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_cliente
+    description: Apresenta a tabela com as informações sobre os clientes cadastrados na base de dados da Adventure Works.
+    columns:
+      - name: pk_id_cliente
+        description: Retorna a chave primária da tabela (CUSTOMERID).
+
+      - name: fk_id_pessoa
+        description: Retorna a chave estrangeira da tabela pessoas (PERSON) para relacionar com o tipo de pessoa ao cliente (PERSONID).
+
+      - name: fk_id_loja
+        description: Retorna a chave estrangeira da tabela ldas lojas (STORE) para relacionar em qual loja o cliente está cadastrado (STOREID).
+      
+      - name: fk_id_territorio
+        description: Retorna a chave estrangeira da tabela estado (STATEPROVINCE) para relacionar com o território do cliente (TERRITORYID).
+      
+      - name: cliente_data_modificacao
+        description: Apresenta a data em que foram realizadas alterações no cadastro do cliente (MODIFIEDDATE).

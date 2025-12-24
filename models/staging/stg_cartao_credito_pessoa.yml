@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_cartao_credito_pessoa
+    description: Associa as pessoas da Adventure Works (clientes, colaboradores, fornecedores), retornando informações do cartão de crédito.
+    columns:
+      - name: pk_id_identidade_pessoa
+        description: Chave primária da tabela (BUSINESSENTITYID).
+
+      - name: fk_id_cartao_credito
+        description: Chave estrangeira que associa as pessoas e suas informações de cartão de crédito (CREDITCARDID).
+      
+      - name: cartao_data_modificacao
+        description: Última data de modificação das informações de cartão de crédito (MODIFIEDDATE).
