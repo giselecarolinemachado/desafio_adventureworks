@@ -2,13 +2,16 @@ version: 2
 
 models:
   - name: stg_motivo_venda
-    description: Apresenta os dados brutos que relacionam os pedidos de venda e seus motivos/razões.
+    description: Apresenta as informações que relacionam os pedidos de venda e seus motivos cadastrados na Adventure Works. 
     columns:
-      - name: pk_id_pedido_venda
-        description: Chave primária da tabela (SALESORDERID).
+      - name: pk_id_venda_motivo
+        description: Chave primária da tabela (SALESREASONID).
       
-      - name:  fk_id_motivo_venda
-        description: chave estrangeira que relaciona o motivo da venda(SALESREASONID).
-      
-      - name: motivo_venda_data_modificacao
-        description: Última data de atualização das informações da tabela de motivos de venda (MODIFIEDDATE)
+      - name:  nome_motivo_venda
+        description: Nome do motivo da venda (NAME).
+
+      - name:  tipo_motivo_venda
+        description: Tipo de motivo da venda (REASONTYPE).
+
+      - name:  venda_motivo_data_modificacao
+        description: Última atualização dos motivos das vendas (MODIFIEDDATE).

@@ -1,11 +1,17 @@
 with 
-    venda_motivo as (
+    motivo_venda as (
+        select *
+        from  {{ source('erp_adventure_works','SALESREASON') }}
+    )
+
+    ,dados_motivo_venda as (
         select
-            cast(SALESORDERID as int ) as pk_id_pedido_venda
-            ,cast(SALESREASONID as int ) as fk_id_motivo_venda
-            ,cast(MODIFIEDDATE as date ) as motivo_venda_data_modificacao
-        from  {{source('erp_adventure_works','SALESORDERHEADERSALESREASON')}}
+            cast(SALESREASONID as int) as pk_id_venda_motivo
+            ,cast(NAME as string) as nome_motivo_venda
+            ,cast(REASONTYPE as string) as tipo_motivo_venda
+            ,cast(MODIFIEDDATE as date) as data_modificacao_motivo_venda
+        from venda_motivo
 )
 
 select * 
-from venda_motivo
+from dados_motivo_venda

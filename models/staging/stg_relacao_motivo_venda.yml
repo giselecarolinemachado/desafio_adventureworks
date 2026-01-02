@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_relacao_motivo_venda
+    description: Tabela com as informações que relacionam os pedidos(salesorderid) de venda e seus motivos/razões cadastrados na Adventure Works. 
+    columns:
+      - name: pk_id_ordem_de_venda
+        description: Chave primária da tabela (SALESORDERID).
+      
+      - name:  fk_id_motivo_venda
+        description: Chave estrangeira que relaciona o motivo da venda(SALESORDERID).
+      
+      - name: motivo_venda_data_modificacao
+        description: Última data de atualização das informações da tabela de relação dos motivos de venda (MODIFIEDDATE)

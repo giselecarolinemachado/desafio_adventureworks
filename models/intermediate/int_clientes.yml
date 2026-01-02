@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_clientes
+    description: Tabela intermediária de clientes com a inclusão das informações de lojas e pessoas. 
+    columns:
+        - name: pk_id_cliente
+          description: Chave primária do cliente
+
+        - name: pk_id_pessoa_identidade_empresarial
+          description: Chave primária da identidade empresarial associada ao cliente
+
+        - name: pessoa_tipo
+          description: Código do tipo de pessoa (SC, IN, SP, EM, VC, GC)
+
+        - name: pessoa_tipo_desc
+          description: Descrição do tipo de pessoa (Contato da Loja, Cliente Varejo, Vendedor, Funcionário (exceto vendedor), Contato de Fornecedor, Contato Geral)
+
+        - name: pessoa_nome
+          description: Nome completo da pessoa associada ao cliente
+          
+        - name: email_promocional
+          description: Indica se a pessoa optou por receber e-mails promocionais
