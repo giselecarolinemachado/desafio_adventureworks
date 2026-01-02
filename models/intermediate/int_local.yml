@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_local
+    description: Apresenta a tabela intermediário com as informações das regiões (cidades, estado e países). 
+    columns:
+      - name: ID_Endereco
+        description: É a chave primária do endereço. 
+        
+      - name: Cidade
+        description: Representa o nome da cidade
+
+      - name: Endereço Completo
+        description: Detalha o endereço, como nome da rua, bairro e número do local (casa/apartamento).
+
+      - name: Estado
+        description: Nome do estado ao qual pertence o endereço.
+
+      - name: País
+        description: Nome do país ao qual pertence o endereço.
+
+      - name: Código País 
+        description: Descreve qual o código daquele país para identificar a região. 

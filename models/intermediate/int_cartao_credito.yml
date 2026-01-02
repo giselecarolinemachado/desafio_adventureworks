@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_cartao_credito
+    description: Apresenta uma tabela intermediária contendo informações dos dados de cartão de crédito dos clientes da Adventure Works. 
+    columns:
+      - name: id_cartao_credito
+        description: Retorna a chave primária do cartão de crédito.
+
+      - name: Tipo Cartão
+        description: Retorna o tipo de cartão de crédito. 
+
+      - name: Número Cartão
+        description: Retorna o número do cartão de crédito do cliente. 
+      
+      - name: Mês Vencimento
+        description: Retorna o mês em que o cartão de crédito expira/vence. 
+
+      - name: Ano Vencimento
+        description: Retorna o ano em que o cartão de crédito expira/vence. 
+
+      - name: id_identidade_pessoa
+        description: Retorna o ID de cadastro do cliente. 

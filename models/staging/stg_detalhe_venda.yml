@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_detalhe_venda
+    description: Apresenta as informações detalhadas sobre os pedidos de venda da Adventure Works.
+    columns:
+      - name: pk_id_detalhe_venda
+        description: É a chave primária da tabela (SALESORDERDETAILID).
+
+      - name: fk_id_cabecalho_venda
+        description: É a chave estrangeira que relaciona o pedido ao cabeçalho de venda (SALESORDERID).
+
+      - name: fk_id_produto 
+        description: É a chave estrangeira que associa o produto ao pedido de venda (PRODUCTID).
+
+      - name: fk_id_oferta_especial  
+        description: É a chave estrangeira que relaciona as ofertas especiais e os pedidos de venda (SPECIALOFFERID).
+
+      - name: quantidade_venda_detalhe
+        description: Representa a quantidade de produtos vendidos no pedido de venda (ORDERQTY).
+
+      - name:  preco_unitario_detalhe_venda
+        description: Detalha o preço unitário de cada produto disponível no pedido de venda (UNITPRICE).
+
+      - name: perc_desconto_detalhe_venda
+        description: Detalha o percentual de desconto disponível no pedido de venda (UNITPRICEDISCOUNT).
+
+      - name: numero_rastreio_detalhe_venda
+        description: Apresenta o número/código de rastreio da transportadora responsável pela coleta e transporte do pedido de venda (CARRIERTRACKINGNUMBER).

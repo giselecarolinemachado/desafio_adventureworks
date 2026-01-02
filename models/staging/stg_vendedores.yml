@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_vendedores
+    description: Retorna a tabela com as informações sobre os vendedores da Adventure Works.
+    columns:
+      - name: pk_id_vendedor
+        description: É a chave primária da tabela (BUSINESSENTITYID).
+
+      - name: fk_id_territorio
+        description: É a chave estrangeira com a localização da loja (TERRITORYID).
+
+      - name: meta_vendedor
+        description: Retorna a meta de vendas anuais projetadas (SALESQUOTA).
+
+      - name: bonus_vendedor
+        description: Retorna o valor do bonus, quando o vendedor atinge a meta (BONUS).
+
+      - name: comissao_vendedor
+        description: Retorna o percentual de comissão do vendedor sobre as vendas realizadas (COMMISSIONPCT).
+
+      - name: vendas_vendedor
+        description: Retorna o total de vendas até a presente data de atualização dos dados (SALESYTD).
+
+      - name: vendas_last_year_vendedor
+        description: Retorna o total de vendas no ano anterior dos vendedores (SALESLASTYEAR ).
+      
+      - name: vendas_ultima_data_modificacao
+        description: Retorna a última data de atualização das informações dos vendedores (MODIFIEDDATE). 
