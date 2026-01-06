@@ -1,0 +1,111 @@
+version: 2
+
+models:
+  - name: int_vendas
+    description: Apresenta a tabela intermediária de vendas, reunindo detalhes e informações dos produtos. 
+    
+    columns:
+      - name: Nota_Fiscal
+        description: Retorna a chave primária do número da ordem de venda/nota fiscal do pedido.
+        
+      - name: Id_Ordem_Pedido
+        description: Surrogate key que une a chave primária do pedido e a chave primária do produto.         
+
+      - name: Id_Cliente
+        description: Chave estrangeira que associa o Id ao cliente. 
+
+      - name: Id_Vendedor
+        description: Chave estrangeira que associa o Id ao Vendedor. 
+
+      - name: Id_Territorio
+        description: Chave estrangeira que associa o território ao pedido/venda. 
+
+      - name: Id_Endereco_Fatura
+        description: Chave estrangeira que associa o endereço ao faturamento do pedido. 
+
+      - name: Id_Endereco_Entrega
+        description: Chave estrangeira que associa o endereço à entrega do pedido. 
+
+      - name: Id_Metodo_Entrega
+        description: Chave estrangeira que associa o tipo de entrega/tipo de transporte ao pedido. 
+
+      - name: Id_Cartao_de_Credito
+        description: Chave estrangeira que associa o pedido ao cartão de crédito. 
+
+      - name: Id_Taxa_de_Cambio
+        description: Chave estrangeira que associa o pedido à taxa de câmbio/cotação moeda do pedido. 
+
+      - name: Id_Produto
+        description: Chave estrangeira que associa o id do produto ao pedido de venda. 
+
+      - name: Id_Codigo_Promocional
+        description: Chave estrangeira que associa condições especiais de venda ao pedido. 
+
+      - name: Data do Pedido
+        description: Retorna a data de emissão do pedido de venda. 
+
+      - name: Prazo de Entrega - Data
+        description: Prazo de entrega do pedido (Data). 
+
+      - name: Data de Envio do Produto
+        description: Retorna a data de envio do produto. 
+
+      - name: Subtotal NF
+        description: Retorna o valor dos produtos da NF (não inclui impostos e custos com frete). 
+
+      - name: Impostos e Deduções
+        description: Retorna os impostos deduzidos sobre o pedido de vendas. 
+
+      - name: Valor Total Frete
+        description: Retorna o valor do frete do respectivo pedido. 
+
+      - name: Total NF
+        description: Retorna o valor total da nota fiscal (incluindo frete e impostos).
+
+      - name: Quantidade de Produto  
+        description: Retorna a quantidade de cada produto destacado na nota fiscal. 
+
+      - name: Valor Unitário
+        description: Retorna o valor unitário de cada produto destacado na nota fiscal. 
+
+      - name: Desconto (Percentual)
+        description: Retorna o desconto aplicado ao pedido de venda. 
+
+      - name: Custo Produto
+        description: Retorna o custo de cada produto na nota fiscal. 
+
+      - name: Valor Total Bruto
+        description: Valor total da nota fiscal, sem incluir os descontos aplicados.
+
+      - name: Valor Total Líquido
+        description: Retorna o valor total líquido da nota fiscal (incluindo descontos aplicados). 
+
+      - name: Margem Bruta
+        description: Retorna a margem bruta, ou seja, sem aplicação de descontos. 
+
+      - name: Margem Líquida
+        description: Retorna a margem líquida, já deduzindo impostos e outros descontos. 
+
+      - name: Rateio Valor Frete
+        description: Retorna o valor do frete dividido pela quantidade de produtos da nota fiscal.
+
+      - name: Número de Revisão do Pedido
+        description: Retorna o número de revisão do pedido de venda. 
+
+      - name: Código Status Pedido
+        description: Retorna o código do status da venda. 
+
+      - name: Status do Pedido
+        description: Retorna a descrição do status do pedido (Em Processo, Aprovado, Em Espera, Recusado, Enviado, Cancelado).
+
+      - name: Tipo de Venda
+        description: Retorna o tipo de venda realizado (loja física ou online). 
+
+      - name: Número Ordem/Pedido de Compra
+        description: Retorna o número da ordem de compra no fornecedor. 
+
+      - name: Número Conta
+        description: Retorna o número da conta. 
+
+      - name: Código Aprovação Cartão de Crédito
+        description: Retorna o código de aprovação do cartão de compra da compra realizada. 
