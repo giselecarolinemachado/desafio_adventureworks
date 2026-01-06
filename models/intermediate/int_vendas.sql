@@ -63,12 +63,12 @@ with
             , valor_bruto_vendas - (custo_padrao_produto * quantidade_venda_detalhe) as margem_bruta_vendas
             , valor_liquido_vendas - (custo_padrao_produto * quantidade_venda_detalhe) as margem_liquida_vendas
             , valor_total_frete / (count(*) over(partition by pk_id_pedido_venda)) as rateio_frete
-        from vendas_enriquecida
+        from vendas
     )
 
     , final as (
         select
-            sk_produto_pedido
+            sk_pedido_produto
             ,pk_id_pedido_venda as Nota_Fiscal
             ,pk_id_detalhe_venda as Id_Ordem_Pedido
             ,fk_id_cliente as Id_Cliente
@@ -92,7 +92,7 @@ with
             ,preco_unitario_detalhe_venda as "Valor Unitário"
             ,perc_desconto_detalhe_venda as "Desconto (Percentual)"
             ,custo_padrao_produto as "Custo Produto" 
-            ,castvalor_bruto_vendas as numeric(18,4)) as "Valor Total Bruto" 
+            ,cast(valor_bruto_vendas as numeric(18,4)) as "Valor Total Bruto" 
             ,cast(valor_liquido_vendas as numeric(18,2)) as "Valor Total Líquido" 
             ,cast(margem_bruta_vendas as numeric(18,2)) as "Margem Bruta" 
             ,cast(margem_liquida_vendas as numeric(18,2)) as "Margem Líquida" 
