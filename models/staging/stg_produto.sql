@@ -11,6 +11,8 @@ with
         ,cast(PRODUCTMODELID as int) as fk_id_modelo_produto
         ,cast(NAME as string) as nome_produto
         ,cast(PRODUCTNUMBER as varchar) as numero_produto
+        ,cast(SELLSTARTDATE as date) as produto_data_inicio_vendas
+        ,cast(SELLENDDATE  as date) as produto_data_fim_vendas
         ,cast(MAKEFLAG as boolean) as flag_make_produto
         ,cast(FINISHEDGOODSFLAG as boolean) as flag_produto_acabado
         ,cast(COLOR as string) as cor_produto

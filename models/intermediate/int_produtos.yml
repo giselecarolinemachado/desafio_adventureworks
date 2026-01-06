@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: int_produtos
+    description: Tabela intermediate contendo as informações dos produtos produzidos, distribuídos e comercializados pela Adventure Works. 
+
+    columns:
+      - name: Id_Produto
+        description: Retorna a chave primária do produto.
+
+      - name: Nome do Produto
+        description: Retorna o nome do produto.
+
+      - name: Nome da Categoria
+        description: Retorna o nome da categoria do produto.
+
+      - name: Nome da Subcategoria
+        description: Retorna o nome da subcategoria do produto.
+
+      - name: Data de Início das Vendas
+        description: Retorna a data de início das vendas do produto.
+
+      - name: Data Fim das Vendas
+        description: Retorna a data final das vendas do produto.
+
+      - name: Preço de Custo
+        description: Retorna o preço de custo do produto.
+
+      - name: Preço de Venda
+        description: Retorna o preço de venda do produto.
