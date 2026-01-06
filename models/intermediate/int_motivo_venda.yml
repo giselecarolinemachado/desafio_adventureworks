@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: int_motivo_venda
+    description: Tabela intermediate contendo informações relacionadas aos motivos de vendas, além de relacionar os pedidos (através da salesorderid) e seus motivos/razões de venda.
+    columns:
+      - name: NF
+        description: Retorna a chave primária do motivo da venda. 
+
+      - name: Motivo_Venda
+        description: Retorna o motivo pelo qual a venda ocorreu. 
+
+      - name: Motivo_Tipo
+        description: Retorna o tipo de motivo pelo qual a venda ocorreu. 
